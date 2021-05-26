@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<helpdesk xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="helpdesk.xsd">
+    <ticket ticketid="38756">
+        <ticketopenedby>
+            <clientid>0042</clientid>
+            <firstname>Wafa</firstname>
+            <lastname>Mustafa</lastname>
+        </ticketopenedby>
+        <opendate>2020-04-05</opendate>
+        <category>service</category>
+        <subject>client issues</subject>
+        <!--updated to description-->
+        <description>damage item.</description>
+        <ticketassignedto>
+            <employeeid>0001</employeeid>
+            <firstname>Karen</firstname>
+            <lastname>Tower</lastname>
+        </ticketassignedto>
+        <status>In progress</status>
+        <!--tied comments with time stamp and id of the person sending the comment-->
+        <comment id="0042">
+            <timestamp>2021-02-15T12:33:04</timestamp>
+            <message>I paid a lot of money for this I need a replacment now!!</message>
+        </comment>
+        <comment id="0001">
+            <timestamp>2021-02-15T12:45:04</timestamp>
+            <message>We are so sorry this happened to you. We will be shipping out a new item to you free of charge</message>
+        </comment>
+        <comment id="0001">
+            <timestamp>2021-02-15T12:50:04</timestamp>
+            <message>We will be sending you a tracking number shortly</message>
+        </comment>
+    </ticket>
+    <ticket ticketid="34336">
+        <ticketopenedby>
+            <clientid>0045</clientid>
+            <firstname>Christie</firstname>
+            <lastname>Amber</lastname>
+        </ticketopenedby>
+        <opendate>2020-04-05</opendate>
+        <closedate>2020-04-15</closedate>
+        <category>software</category>
+        <subject>update issues</subject>
+        <!--added description-->
+        <description>I cant update my software</description>
+        <ticketassignedto>
+            <employeeid>0002</employeeid>
+            <firstname>Mitch</firstname>
+            <lastname>Marner</lastname>
+        </ticketassignedto>
+        <status>Closed</status>
+        <comment id="0045">
+            <timestamp>2021-02-15T12:33:04</timestamp>
+            <message>im worried im going to lose everythinng</message>
+        </comment>
+        <comment id="0002">
+            <timestamp>2021-02-15T12:45:04</timestamp>
+            <message>We have backed up your folders in our cloud storage</message>
+        </comment>
+        <comment id="0002">
+            <timestamp>2021-02-15T12:50:04</timestamp>
+            <message>We will be updating your software on our end</message>
+        </comment>
+    </ticket>
+    <ticket ticketid="343453">
+        <ticketopenedby>
+            <clientid>0045</clientid>
+            <firstname>Christie</firstname>
+            <lastname>Amber</lastname>
+        </ticketopenedby>
+        <opendate>2020-04-05</opendate>
+        <closedate>2020-04-15</closedate>
+        <category>software</category>
+        <subject>update gone wrong</subject>
+        <!--added description-->
+        <description>I cant update my software</description>
+        <ticketassignedto>
+            <employeeid>0002</employeeid>
+            <firstname>Mitch</firstname>
+            <lastname>Marner</lastname>
+        </ticketassignedto>
+        <status>Closed</status>
+        <!--comments binded with message and timestamp-->
+        <comment id="0045">
+            <timestamp>2021-02-15T12:33:04</timestamp>
+            <message>im worried im going to lose everythinng</message>
+        </comment>
+        <comment id="0002">
+            <timestamp>2021-02-15T12:45:04</timestamp>
+            <message>We have backed up your folders in our cloud storage</message>
+        </comment>
+        <comment id="0002">
+            <timestamp>2021-02-15T12:50:04</timestamp>
+            <message>We will be updating your software on our end</message>
+        </comment>
+    </ticket>
+</helpdesk>
+<!--UPDATED AS PER RUBRIC-->
+
+

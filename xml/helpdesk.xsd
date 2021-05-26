@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="helpdesk">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ticket" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ticketopenedby">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:int" name="clientid"/>
+                                        <xs:element type="xs:string" name="firstname"/>
+                                        <xs:element type="xs:string" name="lastname"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element type="xs:date" name="opendate"/>
+                            <xs:element type="xs:date" name="closedate" minOccurs="0"/>
+                            <xs:element type="xs:string" name="category"/>
+                            <xs:element type="xs:string" name="subject"/>
+                            <xs:element type="xs:string" name="description">
+                            </xs:element>
+                            <xs:element name="ticketassignedto">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:int" name="employeeid"/>
+                                        <xs:element type="xs:string" name="firstname"/>
+                                        <xs:element type="xs:string" name="lastname"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element type="xs:string" name="status"/>
+                            <xs:element name="comment" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:dateTime" name="timestamp"/>
+                                        <xs:element type="xs:string" name="message"/>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:int" name="id" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:int" name="ticketid" use="optional"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!--simple type for ticket status-->
+    <xs:simpleType name="statusType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value='Open' />
+            <xs:enumeration value='In progress' />
+            <xs:enumeration value='Closed' />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
+<!--ref for statusType custom element:: https://www.w3.org/2005/07/xml-schema-patterns.html-->
+
+<!--UPDATED AS PER RUBRIC-->

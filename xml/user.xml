@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<registeration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="user.xsd">
+    <account usertype="employee" id="0001">
+        <firstname>Karen</firstname>
+        <lastname>Tower</lastname>
+        <location>Mississauga</location>
+        <dob>1991-07-27</dob>
+        <email>k.tower@gmail.com</email>
+        <username>kTower</username>
+        <password>Towerk</password>
+    </account>
+    <account usertype="user" id="0042">
+        <firstname>Wafa</firstname>
+        <middlename></middlename>
+        <lastname>Mustafa</lastname>
+        <location>Mississauga</location>
+        <dob>1992-03-17</dob>
+        <email>wafa.mustafa@live.ca</email>
+        <username>Wafam</username>
+        <password>Mwafa</password>
+    </account>
+    <account usertype="employee" id="0002">
+        <firstname>Mitch</firstname>
+        <lastname>Marner</lastname>
+        <location>Toronto</location>
+        <dob>1992-12-04</dob>
+        <email>mitch.m@hotmail.com</email>
+        <username>tmlmitch</username>
+        <password>mitchM</password>
+    </account>
+    <account usertype="user" id="0045">
+        <firstname>Christie</firstname>
+        <middlename>Amber</middlename>
+        <lastname>Edward</lastname>
+        <dob>1992-05-24</dob>
+        <email>amber.edward@hotmail.com</email>
+        <username>Amber</username>
+        <password>Amber112</password>
+    </account>
+</registeration>
+<!--I wanted to add email but im not able to validate RegEx for email-->

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans+Condensed:wght@300&display=swap');
+
+:root {
+
+/* Font Families */
+--headerFont: 'Bebas Neue', cursive;
+--generalFont: 'Open Sans Condensed', sans-serif;
+
+/* Colours */
+--white: #F5F5F5;
+--lightGrey: #B9C2CB;
+--sageGreen: #88bbb8;
+--darkGreen: #658a87;
+} 
+
+html {
+box-sizing:border-box;
+background-color: var(--white);
+}
+
+*, *::before, *::after {
+box-sizing:inherit;
+}
+
+body {
+    max-width: 1200px;
+    max-height: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    font-family: var(--headerFont);
+}
+
+#useraccount_div{
+    background-color: var(--lightGrey);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 2.5em;
+    border-radius: 1em;
+}
+
+.useraccount_logoutbtn{
+    align-self: flex-end;
+    font-family: var(--headerFont);
+    width: 8em;
+    height: 3em;
+    background-color: var(--sageGreen);
+    border-color:var(--darkGreen);
+    border-radius: 1em;
+}
+
+.useraccount_logoutbtn a:link{
+    text-decoration: none;
+    color: black;
+}
+
+.useraccount_logoutbtn a:hover{
+    text-decoration: none;
+    color:var(--white);
+}
+
+.useraccount_tickets{
+    margin-bottom: 2em;
+    width: 500px;
+}
+
+table {
+    margin-right: none;
+}
+
+th{
+    font-family: var(--headerFont);
+    margin-right: 2em;
+}
+
+tbody {
+    font-family: var(--generalFont);
+}
+
+
+.useraccount_tickets__detailbtn {
+    font-family: var(--headerFont);
+    width: 6em;
+    height: 2em;
+    background-color: var(--sageGreen);
+    border-color:var(--darkGreen);
+    border-radius: .5em;
+}
+
+.useraccount_tickets__detailbtn a:link{
+    text-decoration: none;
+    color: black;
+}
+
+.useraccount_tickets__detailbtn a:hover{
+    text-decoration: none;
+    color:var(--white);
+}
+
+

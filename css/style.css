@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans+Condensed:wght@300&display=swap');
+
+:root {
+
+/* Font Families */
+--headerFont: 'Bebas Neue', cursive;
+--generalFont: 'Open Sans Condensed', sans-serif;
+
+/* Colours */
+--white: #F5F5F5;
+--lightGrey: #B9C2CB;
+--sageGreen: #88bbb8;
+--darkGreen: #658a87;
+} 
+
+html {
+box-sizing:border-box;
+background-color: var(--white);
+}
+
+*, *::before, *::after {
+box-sizing:inherit;
+}
+
+body {
+    max-width: 1200px;
+    max-height: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: var(--headerFont);
+}
+
+#loginform {
+    background-color: var(--lightGrey);
+    width: 400px;
+    height: 250px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    align-content: center;
+    padding: 2.5em;
+    border-radius: 1em;
+}
+
+
+#loginform label{
+    font-family: var(--generalFont);
+    font-weight: bold;
+}
+
+.loginform_userdiv {
+    margin-bottom: 1em;
+}
+
+.loginform_passdiv {
+    margin-bottom: 1em;
+}
+
+#loginform button{
+    font-family: var(--headerFont);
+    width: 6em;
+    height: 3em;
+    background-color: var(--sageGreen);
+    border-color:var(--darkGreen);
+    border-radius: 1em;
+}
+
+.logoutBtn a:link{
+    text-decoration: none;
+}
+
+.logoutBtn a:hover{
+    color: var(--white);
+}
+
+
+
+

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans+Condensed:wght@300&display=swap');
+
+:root {
+
+/* Font Families */
+--headerFont: 'Bebas Neue', cursive;
+--generalFont: 'Open Sans Condensed', sans-serif;
+
+/* Colours */
+--white: #F5F5F5;
+--lightGrey: #B9C2CB;
+--sageGreen: #88bbb8;
+--darkGreen: #658a87;
+} 
+
+html {
+box-sizing:border-box;
+background-color: var(--white);
+}
+
+*, *::before, *::after {
+box-sizing:inherit;
+}
+
+body {
+    max-width: 1200px;
+    max-height: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-family: var(--headerFont);
+    margin-bottom: none;
+}
+
+#ticketdetail_div{
+    background-color: var(--lightGrey);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 1em;
+    border-radius: 1em;
+    font-family: var(--headerFont);
+    margin-bottom: none;
+}
+
+.ticket_discription {
+    font-family:var(--generalFont);
+
+}
+.ticket_discription p{
+    margin-bottom: none;
+}
+
+.messageBox input{
+    width: 500px;
+    height:75px;
+}
+
+.messageBox button{
+    align-self: flex-end;
+    font-family: var(--headerFont);
+    width: 8em;
+    height: 2em;
+    background-color: var(--sageGreen);
+    border-color:var(--darkGreen);
+    border-radius: .5em;
+    margin-top:2em;
+}
+
+.account_btn{
+    flex-direction: row;
+    margin-left: 15em;
+    font-family: var(--headerFont);
+    width: 8em;
+    height: 3em;
+    background-color: var(--sageGreen);
+    border-color:var(--darkGreen);
+    border-radius: .5em;
+}
+
+.account_btn a:link{
+    text-decoration: none;
+    color: black;
+}
+
+.account_btn a:hover{
+    text-decoration: none;
+    color:var(--white);
+}

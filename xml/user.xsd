@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="registeration">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="account" maxOccurs="unbounded" >
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="firstname" type="xs:string" />
+                            <xs:element name="middlename" minOccurs="0" type="xs:string" />
+                            <xs:element name="lastname" type="xs:string" />
+                            <xs:element name="location" minOccurs="0" type="xs:string" />
+                            <xs:element name="dob" type="xs:date"/>
+                            <xs:element name="email" minOccurs="0" type="emailregex" />
+                            <xs:element name="username" type="xs:string" />
+                            <xs:element name="password" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="usertype" type="xs:string" use="required" />
+                        <xs:attribute name="id" type="xs:positiveInteger" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="emailregex">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="250" />
+            <xs:pattern value="[_\-a-zA-Z0-9\.\+]+@[a-zA-Z0-9](\.?[\-a-zA-Z0-9]*[a-zA-Z0-9])*" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
+<!--Email validation ref https://github.com/metashare/META-SHARE/issues/527-->
+<!--UPDATED AS PER RUBRIC-->
